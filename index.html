@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Fresh Paint FL | Architectural Interior &amp; Exterior House Painters</title>
+<!-- Google Fonts: Editorial Serif + Clean Modern Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Prata&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#121316',
+            stoneBg: '#F8F7F4',
+            surfaceMuted: '#EFECE6',
+            cardBg: '#FFFFFF',
+            accentRed: '#E11D48',
+            brandGold: '#EAB308',
+            sandMuted: '#848079'
+          },
+          fontFamily: {
+            serif: ['Prata', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
+            display: ['Syne', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Architectural & Parallax Styles -->
+<style data-purpose="custom-styling">
+    body {
+      background-color: #F8F7F4;
+      color: #121316;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+    .glass-nav {
+      background: rgba(18, 19, 22, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .img-zoom-container {
+      overflow: hidden;
+    }
+    .img-parallax {
+      will-change: transform;
+      transition: transform 0.15s cubic-bezier(0.2, 0.4, 0.3, 1);
+    }
+    /* Hide scrollbars for slick swipers */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<!-- END: Custom Architectural & Parallax Styles -->
+</head>
+<body class="font-sans antialiased text-obsidian bg-stoneBg selection:bg-accentRed selection:text-white pb-24">
+<!-- BEGIN: Announcement Bar -->
+<aside class="bg-obsidian text-stone-200 text-[11px] uppercase tracking-widest py-2 px-4 text-center font-medium border-b border-white/5 sticky top-0 z-50" data-purpose="top-announcement">
+<div class="flex items-center justify-center space-x-2">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-accentRed animate-pulse"></span>
+<span>Central Florida’s Premier Finishers</span>
+<span class="text-white/30">•</span>
+<span class="text-amber-400 font-semibold tracking-normal flex items-center gap-0.5">
+        ★ 5.0 Rating (170+ Reviews)
+      </span>
+</div>
+</aside>
+<!-- END: Announcement Bar -->
+<!-- BEGIN: Header Navigation -->
+<header class="relative z-40 bg-white/80 backdrop-blur-md border-b border-stone-200/60 sticky top-8 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-5 py-3.5 flex items-center justify-between">
+<!-- Brand Logo -->
+<a aria-label="Fresh Paint FL Home" class="flex items-center gap-2.5 group" href="#home">
+<!-- Minimalist House Geometric Monogram -->
+<svg class="w-8 h-8 text-accentRed transition-transform group-hover:scale-105 duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 40 40">
+<path d="M4 19L20 5L36 19" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M8 17V33C8 34.1 8.9 35 10 35H30C31.1 35 32 34.1 32 33V17" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M26 10V6H32V15" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M16 35V24C16 22.9 16.9 22 18 22H22C23.1 22 24 22.9 24 24V35" stroke-linecap="round"></path>
+</svg>
+<div class="flex flex-col">
+<span class="font-display font-black text-sm tracking-tight text-obsidian leading-none">FRESH PAINT <span class="text-accentRed">FL</span></span>
+<span class="text-[9px] tracking-[0.22em] text-sandMuted uppercase mt-0.5">Architectural Finishes</span>
+</div>
+</a>
+<!-- Direct Phone & Mobile Trigger -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-obsidian px-3 py-1.5 rounded-full border border-stone-300 hover:border-black transition" href="tel:8633979974">
+<svg class="w-3.5 h-3.5 text-accentRed" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+          (863) 397-9974
+        </a>
+<button aria-label="Toggle navigation drawer" class="p-2 rounded-lg text-obsidian hover:bg-stone-100 transition active:scale-95 focus:outline-none" id="menu-btn">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<line x1="3" x2="21" y1="7" y2="7"></line>
+<line x1="3" x2="21" y1="12" y2="12"></line>
+<line x1="3" x2="21" y1="17" y2="17"></line>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<!-- END: Header Navigation -->
+<!-- BEGIN: Mobile Drawer Menu Modal -->
+<div class="fixed inset-0 bg-obsidian/70 backdrop-blur-md z-50 opacity-0 pointer-events-none transition-all duration-300 flex flex-col justify-end" id="mobile-menu">
+<div class="bg-white rounded-t-3xl p-6 shadow-2xl transform translate-y-full transition-transform duration-300" id="drawer-content">
+<div class="flex items-center justify-between pb-4 border-b border-stone-200">
+<span class="font-display font-bold text-sm tracking-widest text-sandMuted uppercase">Navigation Menu</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-stone-100 text-stone-700" id="close-menu-btn">✕</button>
+</div>
+<nav class="flex flex-col py-6 space-y-4 text-lg font-serif">
+<a class="drawer-link text-obsidian hover:text-accentRed transition" href="#home">01. Overview</a>
+<a class="drawer-link text-obsidian hover:text-accentRed transition" href="#contact">02. Instant Estimate</a>
+<a class="drawer-link text-obsidian hover:text-accentRed transition" href="#services">03. Curated Services</a>
+<a class="drawer-link text-obsidian hover:text-accentRed transition" href="#why-us">04. Heritage &amp; Craft</a>
+<a class="drawer-link text-obsidian hover:text-accentRed transition" href="#projects">05. Recent Portfolio</a>
+<a class="drawer-link text-obsidian hover:text-accentRed transition" href="#reviews">06. Client Reviews (170+)</a>
+</nav>
+<div class="pt-4 border-t border-stone-200">
+<a class="w-full flex items-center justify-center gap-2 bg-obsidian text-white py-3.5 rounded-xl font-medium text-sm" href="tel:8633979974">
+          Call Now: (863) 397-9974
+        </a>
+</div>
+</div>
+</div>
+<!-- END: Mobile Drawer Menu Modal -->
+<main>
+<!-- BEGIN: Hero Section -->
+<section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden px-4 pt-4 pb-12" id="home">
+<!-- Parallax Background Image -->
+<div class="absolute inset-0 -z-10 img-zoom-container">
+<img alt="Ultra high-end modern Florida luxury suburban house exterior" class="w-full h-full object-cover object-center img-parallax transform scale-110" id="hero-bg-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3M3LUyfxwRV9Z8ECUj_tc8NsmWRoLmMzdcInN0raiNKxIWf2fjIxvuuIwpaUN8R43cDyZRf7scB0ScaXzfVHFOun8PwyRC-UAaXnt_PXR00MedtZXbj697dnoEW11-kUaYHz_ZrXLYgjTA_Xy39oEvu-SpCCqFflAr2nt3yIz-PLO0uESJSASZq_C5IOLNjMOt0wtO-DWUtPA6TGpUc1fATwgosfwb3lyv15PgA7M"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/75"></div>
+</div>
+<!-- Floating Frosted Glass Luxury Conversion Card -->
+<div class="glass-card w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl text-center border border-white/40 my-auto transform transition-all duration-700 reveal-element">
+<!-- Direct Phone Header -->
+<a class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-100/90 hover:bg-stone-200/90 text-obsidian font-semibold text-xs tracking-wide transition mb-4" href="tel:8633979974">
+<svg class="w-3.5 h-3.5 text-accentRed" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+          Call For Free Estimate: (863) 397-9974
+        </a>
+<!-- Headline replicates 1:1 message with elevated editorial typography -->
+<h1 class="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-obsidian leading-snug mb-3">
+          Trusted Interior &amp; Exterior House Painters in Central Florida
+        </h1>
+<p class="text-xs text-stone-600 mb-5 max-w-xs mx-auto leading-relaxed">
+          Flawless architectural spray and brush finishes designed to withstand the intense Florida climate.
+        </p>
+<!-- Feature List Pills -->
+<div class="grid grid-cols-2 gap-2 text-left mb-6 text-[11px] font-medium text-stone-700">
+<div class="flex items-center gap-1.5 bg-stone-50/80 p-2 rounded-lg border border-stone-200/60">
+<span class="text-accentRed">✓</span> Interior &amp; Exterior
+          </div>
+<div class="flex items-center gap-1.5 bg-stone-50/80 p-2 rounded-lg border border-stone-200/60">
+<span class="text-accentRed">✓</span> Pressure Washing
+          </div>
+<div class="flex items-center gap-1.5 bg-stone-50/80 p-2 rounded-lg border border-stone-200/60">
+<span class="text-accentRed">✓</span> Free Estimates
+          </div>
+<div class="flex items-center gap-1.5 bg-stone-50/80 p-2 rounded-lg border border-stone-200/60">
+<span class="text-amber-500">★</span> 170+ Homeowners
+          </div>
+</div>
+<!-- Primary CTA Button -->
+<a class="w-full inline-block py-3.5 px-6 rounded-xl bg-accentRed text-white font-medium text-sm tracking-wide shadow-lg shadow-accentRed/30 hover:bg-rose-700 active:scale-[0.98] transition" href="#contact">
+          GET A FREE ESTIMATE
+        </a>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Contact & Instant Estimate Section -->
+<section class="py-16 px-4 max-w-xl mx-auto" id="contact">
+<div class="text-center mb-8 reveal-element">
+<span class="text-[11px] font-bold uppercase tracking-widest text-accentRed">Fast Online Scheduling</span>
+<h2 class="font-serif text-3xl font-normal tracking-tight text-obsidian mt-1">Contact Us</h2>
+<div class="w-12 h-0.5 bg-obsidian mx-auto mt-2"></div>
+</div>
+<div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm reveal-element">
+<h3 class="font-display font-bold text-base text-obsidian mb-1">Request Your Free Estimate Today</h3>
+<p class="text-xs text-sandMuted mb-6">Tell us what you need — we’ll respond within 24 hours with your free estimate.</p>
+<!-- Estimate Form -->
+<form class="space-y-4" id="estimate-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+<div>
+<label class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1" for="name">Full Name</label>
+<input class="w-full rounded-xl border-stone-200 text-sm focus:border-obsidian focus:ring-obsidian placeholder:text-stone-300 py-3" id="name" placeholder="Johnathan Doe" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1" for="email">Email</label>
+<input class="w-full rounded-xl border-stone-200 text-sm focus:border-obsidian focus:ring-obsidian placeholder:text-stone-300 py-3" id="email" placeholder="name@domain.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1" for="phone">Phone</label>
+<input class="w-full rounded-xl border-stone-200 text-sm focus:border-obsidian focus:ring-obsidian placeholder:text-stone-300 py-3" id="phone" placeholder="(863) 000-0000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1" for="address">Project Address</label>
+<input class="w-full rounded-xl border-stone-200 text-sm focus:border-obsidian focus:ring-obsidian placeholder:text-stone-300 py-3" id="address" placeholder="Clermont, FL or Neighborhood" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1" for="details">Project Details</label>
+<textarea class="w-full rounded-xl border-stone-200 text-sm focus:border-obsidian focus:ring-obsidian placeholder:text-stone-300 py-2.5" id="details" placeholder="Interior repaint, exterior stucco coating, driveway pressure wash..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 rounded-xl bg-obsidian text-white text-xs uppercase font-bold tracking-wider hover:bg-stone-800 transition active:scale-[0.99] flex items-center justify-center gap-2" id="submit-btn" type="submit">
+<span>GET MY FREE ESTIMATE</span>
+<svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path></svg>
+</button>
+<div class="hidden text-center text-xs font-medium text-emerald-700 bg-emerald-50 py-2.5 rounded-lg" id="form-msg">
+            Thank you! Your estimate inquiry has been transmitted. We will reply within 24 hrs.
+          </div>
+<p class="text-[10px] text-center text-stone-400">
+            Protected by reCAPTCHA. Privacy Policy and Terms of Service apply.
+          </p>
+</form>
+<!-- Business Context Accordion / Quick Info -->
+<div class="mt-8 pt-6 border-t border-stone-100 space-y-4 text-xs">
+<!-- Guarantees list -->
+<ul class="grid grid-cols-2 gap-2 text-stone-600 font-medium">
+<li class="flex items-center gap-1.5"><span class="text-accentRed">★</span> 170+ Verified 5-Star Reviews</li>
+<li class="flex items-center gap-1.5"><span class="text-accentRed">✓</span> Licensed &amp; Insured</li>
+<li class="flex items-center gap-1.5"><span class="text-accentRed">✓</span> Rapid Scheduling</li>
+<li class="flex items-center gap-1.5"><span class="text-accentRed">✓</span> Satisfaction Guaranteed</li>
+</ul>
+<div class="bg-stoneBg p-4 rounded-2xl">
+<h4 class="font-bold text-obsidian mb-1">Serving Central Florida</h4>
+<p class="text-stone-500 text-[11px] leading-relaxed mb-2">
+              Four Corners, Davenport, Clermont, Champions Gate, Haines City, Windermere, Winter Garden &amp; surrounding estates.
+            </p>
+<div class="flex items-center justify-between text-[11px] font-mono text-stone-700 pt-2 border-t border-stone-200">
+<span>Operating Hours:</span>
+<span class="font-bold">Mon - Sun: 7:00 am – 7:00 pm</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Contact & Instant Estimate Section -->
+<!-- BEGIN: Services Section -->
+<section class="py-16 px-4 max-w-xl mx-auto" id="services">
+<div class="text-center mb-10 reveal-element">
+<span class="text-[11px] font-bold uppercase tracking-widest text-accentRed">Tailored Craftsmanship</span>
+<h2 class="font-serif text-3xl font-normal tracking-tight text-obsidian mt-1">Our Painting &amp; Pressure Washing Services</h2>
+<div class="w-12 h-0.5 bg-obsidian mx-auto mt-2"></div>
+</div>
+<div class="space-y-6">
+<!-- Service Card 1: Interior -->
+<article class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm reveal-element transition hover:shadow-md">
+<div class="h-56 overflow-hidden relative">
+<img alt="Pristine modern luxury home interior living room" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlwpFMeqoR0RVbTqEsG2z_Qi-cGC69yUixiesxyBcKQaAlqAvw8mauRQUEZQyigk0qzcOUAFlYKWQVh58dnNSn696xTzeXvbCV9YGLixV5I2FMn351XShulFlFLAvsnoTwe-gemtXL11FFxw3IVTgImpTeDY-QB81l33trsQYh_JbgAVD5oG6L9JEMn4xRbO_kS1W9dinUtfZIt4GDIVuJIkIK6BJOegzlcd16ECr9"/>
+<span class="absolute top-4 left-4 bg-obsidian/80 backdrop-blur-md text-white text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-full font-bold">
+              Interior Studio
+            </span>
+</div>
+<div class="p-6">
+<h3 class="font-serif text-xl font-normal text-obsidian mb-2">Interior Painting</h3>
+<p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Refresh your home with clean, professional interior painting. We paint walls, ceilings, trim, doors, and millwork with smooth architectural finishes and pristine attention to detail.
+            </p>
+<a class="inline-flex items-center text-xs font-bold text-obsidian tracking-wider uppercase border-b border-obsidian pb-0.5 hover:text-accentRed hover:border-accentRed transition" href="#contact">
+              Learn More &amp; Book →
+            </a>
+</div>
+</article>
+<!-- Service Card 2: Exterior -->
+<article class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm reveal-element transition hover:shadow-md">
+<div class="h-56 overflow-hidden relative">
+<img alt="Ultra high-end modern Florida luxury suburban house exterior" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3M3LUyfxwRV9Z8ECUj_tc8NsmWRoLmMzdcInN0raiNKxIWf2fjIxvuuIwpaUN8R43cDyZRf7scB0ScaXzfVHFOun8PwyRC-UAaXnt_PXR00MedtZXbj697dnoEW11-kUaYHz_ZrXLYgjTA_Xy39oEvu-SpCCqFflAr2nt3yIz-PLO0uESJSASZq_C5IOLNjMOt0wtO-DWUtPA6TGpUc1fATwgosfwb3lyv15PgA7M"/>
+<span class="absolute top-4 left-4 bg-obsidian/80 backdrop-blur-md text-white text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-full font-bold">
+              Estate Finishes
+            </span>
+</div>
+<div class="p-6">
+<h3 class="font-serif text-xl font-normal text-obsidian mb-2">Exterior Painting</h3>
+<p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Protect and refresh your home’s exterior with professional grade coatings that boost curb appeal and hold up relentlessly in severe Florida heat, humidity, and tropical rains.
+            </p>
+<a class="inline-flex items-center text-xs font-bold text-obsidian tracking-wider uppercase border-b border-obsidian pb-0.5 hover:text-accentRed hover:border-accentRed transition" href="#contact">
+              Learn More &amp; Book →
+            </a>
+</div>
+</article>
+<!-- Service Card 3: Pressure Washing -->
+<article class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm reveal-element transition hover:shadow-md">
+<div class="h-56 overflow-hidden relative">
+<img alt="Luxury modern Florida home patio pool deck with freshly pressure-washed travertine stone pavers" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmPbSL5Ct1Av9drhB49J_O0fqGtfhw4L0y3SMwHgJFl5EA540JCOeWXVnsVbnCvxg7QVBIUfIN2NrOq5E4TjKzxVKg1EaVvW4HNCE-bXdsHyfNhDMI_A9ZcUdR8vkeeWSitVnK0cajedsBm-H0tRCDAOc1_9wgLeLn-AC6PbetQJrcfc0EA6nCi1gS_iJ56I9avTNfSg5QS_TBhU4HE6XDZNAofx6Y3PmsXxxrJ7uo"/>
+<span class="absolute top-4 left-4 bg-obsidian/80 backdrop-blur-md text-white text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-full font-bold">
+              Surface Care
+            </span>
+</div>
+<div class="p-6">
+<h3 class="font-serif text-xl font-normal text-obsidian mb-2">Pressure Washing</h3>
+<p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Restore your property’s exterior with professional surface washing. We safely deep-clean driveways, sidewalks, pool decks, travertine stone, and home perimeters for a like-new look.
+            </p>
+<a class="inline-flex items-center text-xs font-bold text-obsidian tracking-wider uppercase border-b border-obsidian pb-0.5 hover:text-accentRed hover:border-accentRed transition" href="#contact">
+              Learn More &amp; Book →
+            </a>
+</div>
+</article>
+</div>
+</section>
+<!-- END: Services Section -->
+<!-- BEGIN: Why Choose Fresh Paint FL -->
+<section class="py-16 px-4 bg-white border-y border-stone-200" id="why-us">
+<div class="max-w-xl mx-auto">
+<div class="text-center mb-10 reveal-element">
+<span class="text-[11px] font-bold uppercase tracking-widest text-accentRed">Reputation &amp; Experience</span>
+<h2 class="font-serif text-3xl font-normal tracking-tight text-obsidian mt-1">Why Choose Fresh Paint FL</h2>
+<div class="w-12 h-0.5 bg-obsidian mx-auto mt-2"></div>
+</div>
+<div class="space-y-8">
+<!-- Heritage Card with circular framed emblem style -->
+<div class="bg-stoneBg rounded-3xl p-6 sm:p-8 text-center reveal-element">
+<div class="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-accentRed overflow-hidden p-1 bg-white shadow-md">
+<div class="w-full h-full rounded-full bg-stone-100 flex items-center justify-center font-display font-extrabold text-xs text-obsidian tracking-wider text-center px-1">
+                CLERMONT STA. 3
+              </div>
+</div>
+<h3 class="font-serif text-xl text-obsidian mb-2">About Fresh Paint FL</h3>
+<p class="text-xs text-stone-600 leading-relaxed">
+<strong>Fresh Paint FL is a locally owned painting company serving Central Florida homeowners for over 10 years.</strong> From fine residential estates to key public municipal architecture like City of Clermont Fire Station No. 3, our artisans deliver clean, reliable finishing and care.
+            </p>
+</div>
+<!-- Community Card -->
+<div class="bg-stoneBg rounded-3xl p-6 sm:p-8 text-center reveal-element">
+<div class="inline-block px-3 py-1 rounded-full bg-accentRed/10 text-accentRed text-[11px] font-bold uppercase tracking-wider mb-3">
+              Master Disney Experience
+            </div>
+<h3 class="font-serif text-xl text-obsidian mb-2">Proudly Supporting Our Local Community</h3>
+<p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Led by Edwin Perez, with <strong>20+ years of Disney painting experience</strong>, Fresh Paint FL brings world-class precision craftsmanship to homes throughout Central Florida.
+            </p>
+<div class="flex flex-wrap justify-center gap-2 mb-6 text-[11px] font-semibold text-stone-700">
+<span class="bg-white px-3 py-1 rounded-full border border-stone-200">★ 170+ 5-Star Reviews</span>
+<span class="bg-white px-3 py-1 rounded-full border border-stone-200">✓ Licensed &amp; Insured</span>
+<span class="bg-white px-3 py-1 rounded-full border border-stone-200">✓ Trusted Local Team</span>
+</div>
+<a class="inline-block py-3 px-6 rounded-xl bg-obsidian text-white font-medium text-xs tracking-wider uppercase hover:bg-stone-800 transition" href="#contact">
+              Get A Free Estimate
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Why Choose Fresh Paint FL -->
+<!-- BEGIN: Recent Projects Portfolio -->
+<section class="py-16 px-4 max-w-xl mx-auto" id="projects">
+<div class="text-center mb-8 reveal-element">
+<span class="text-[11px] font-bold uppercase tracking-widest text-accentRed">Real Portfolio</span>
+<h2 class="font-serif text-3xl font-normal tracking-tight text-obsidian mt-1">Recent Projects Near You</h2>
+<div class="w-12 h-0.5 bg-obsidian mx-auto mt-2"></div>
+<p class="text-xs text-stone-500 mt-2">Before, in-progress, and final transformations across Lake &amp; Orange County.</p>
+</div>
+<!-- Mosaic Gallery Grid -->
+<div class="grid grid-cols-2 gap-3 reveal-element">
+<!-- Thumbnail 1 -->
+<div class="relative group rounded-2xl overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuD3M3LUyfxwRV9Z8ECUj_tc8NsmWRoLmMzdcInN0raiNKxIWf2fjIxvuuIwpaUN8R43cDyZRf7scB0ScaXzfVHFOun8PwyRC-UAaXnt_PXR00MedtZXbj697dnoEW11-kUaYHz_ZrXLYgjTA_Xy39oEvu-SpCCqFflAr2nt3yIz-PLO0uESJSASZq_C5IOLNjMOt0wtO-DWUtPA6TGpUc1fATwgosfwb3lyv15PgA7M', 'Exterior Estate Transformation - Windermere')">
+<img alt="Modern Florida estate exterior" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3M3LUyfxwRV9Z8ECUj_tc8NsmWRoLmMzdcInN0raiNKxIWf2fjIxvuuIwpaUN8R43cDyZRf7scB0ScaXzfVHFOun8PwyRC-UAaXnt_PXR00MedtZXbj697dnoEW11-kUaYHz_ZrXLYgjTA_Xy39oEvu-SpCCqFflAr2nt3yIz-PLO0uESJSASZq_C5IOLNjMOt0wtO-DWUtPA6TGpUc1fATwgosfwb3lyv15PgA7M"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-end p-2 text-white text-[10px]">
+<span>Exterior Repaint</span>
+</div>
+</div>
+<!-- Thumbnail 2 -->
+<div class="relative group rounded-2xl overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuAlwpFMeqoR0RVbTqEsG2z_Qi-cGC69yUixiesxyBcKQaAlqAvw8mauRQUEZQyigk0qzcOUAFlYKWQVh58dnNSn696xTzeXvbCV9YGLixV5I2FMn351XShulFlFLAvsnoTwe-gemtXL11FFxw3IVTgImpTeDY-QB81l33trsQYh_JbgAVD5oG6L9JEMn4xRbO_kS1W9dinUtfZIt4GDIVuJIkIK6BJOegzlcd16ECr9', 'Luxury Living Great Room - Clermont')">
+<img alt="Pristine interior living area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlwpFMeqoR0RVbTqEsG2z_Qi-cGC69yUixiesxyBcKQaAlqAvw8mauRQUEZQyigk0qzcOUAFlYKWQVh58dnNSn696xTzeXvbCV9YGLixV5I2FMn351XShulFlFLAvsnoTwe-gemtXL11FFxw3IVTgImpTeDY-QB81l33trsQYh_JbgAVD5oG6L9JEMn4xRbO_kS1W9dinUtfZIt4GDIVuJIkIK6BJOegzlcd16ECr9"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-end p-2 text-white text-[10px]">
+<span>Interior Finishing</span>
+</div>
+</div>
+<!-- Thumbnail 3 -->
+<div class="relative group rounded-2xl overflow-hidden aspect-square cursor-pointer" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuDmPbSL5Ct1Av9drhB49J_O0fqGtfhw4L0y3SMwHgJFl5EA540JCOeWXVnsVbnCvxg7QVBIUfIN2NrOq5E4TjKzxVKg1EaVvW4HNCE-bXdsHyfNhDMI_A9ZcUdR8vkeeWSitVnK0cajedsBm-H0tRCDAOc1_9wgLeLn-AC6PbetQJrcfc0EA6nCi1gS_iJ56I9avTNfSg5QS_TBhU4HE6XDZNAofx6Y3PmsXxxrJ7uo', 'Pool Deck &amp; Paver Restoration - Davenport')">
+<img alt="Restored pool deck with travertine pavers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmPbSL5Ct1Av9drhB49J_O0fqGtfhw4L0y3SMwHgJFl5EA540JCOeWXVnsVbnCvxg7QVBIUfIN2NrOq5E4TjKzxVKg1EaVvW4HNCE-bXdsHyfNhDMI_A9ZcUdR8vkeeWSitVnK0cajedsBm-H0tRCDAOc1_9wgLeLn-AC6PbetQJrcfc0EA6nCi1gS_iJ56I9avTNfSg5QS_TBhU4HE6XDZNAofx6Y3PmsXxxrJ7uo"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-end p-2 text-white text-[10px]">
+<span>Paver Washing &amp; Seal</span>
+</div>
+</div>
+<!-- Thumbnail 4 (High Impact Full Exterior Detail) -->
+<div class="relative group rounded-2xl overflow-hidden aspect-square cursor-pointer bg-obsidian flex flex-col justify-center items-center text-center p-4" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})">
+<span class="font-display font-extrabold text-2xl text-white mb-1">500+</span>
+<span class="text-[10px] text-stone-300 uppercase tracking-widest font-semibold">Homes Perfected</span>
+<span class="mt-2 text-[10px] text-accentRed underline font-bold">Start Your Home →</span>
+</div>
+</div>
+</section>
+<!-- END: Recent Projects Portfolio -->
+<!-- BEGIN: Lightbox Modal for Portfolio -->
+<div class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex-col items-center justify-center p-4" id="lightbox">
+<button class="absolute top-6 right-6 text-white text-2xl font-light p-2 focus:outline-none" onclick="closeLightbox()">✕</button>
+<img alt="Project Preview" class="max-w-full max-h-[75vh] rounded-2xl object-contain shadow-2xl mb-3" id="lightbox-img" src=""/>
+<p class="text-stone-300 text-xs tracking-wider uppercase font-medium" id="lightbox-caption"></p>
+</div>
+<!-- END: Lightbox Modal for Portfolio -->
+<!-- BEGIN: 170+ 5-Star Google Reviews Section -->
+<section class="py-16 px-4 bg-stoneBg" id="reviews">
+<div class="max-w-xl mx-auto">
+<div class="text-center mb-8 reveal-element">
+<!-- Google 5.0 Star Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-stone-200 shadow-sm mb-3">
+<svg class="w-4 h-4" viewbox="0 0 24 24">
+<path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.14z" fill="#4285F4"></path>
+<path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z" fill="#34A853"></path>
+<path d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z" fill="#FBBC05"></path>
+<path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" fill="#EA4335"></path>
+</svg>
+<span class="font-bold text-xs text-obsidian">5.0 Rating</span>
+<span class="text-amber-400 text-xs">★★★★★</span>
+<span class="text-[10px] text-stone-500">(191 Verified Reviews)</span>
+</div>
+<h2 class="font-serif text-3xl font-normal tracking-tight text-obsidian">170+ 5-Star Google Reviews</h2>
+<div class="w-12 h-0.5 bg-obsidian mx-auto mt-2"></div>
+</div>
+<!-- Horizontal Scroll Testimonial Deck replicating the exact 3 featured reviewers -->
+<div class="flex overflow-x-auto gap-4 no-scrollbar pb-4 snap-x snap-mandatory px-1">
+<!-- Card 1: Bob King -->
+<div class="min-w-[280px] max-w-[290px] bg-white rounded-3xl p-5 border border-stone-200 shadow-sm snap-center flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-rose-600 text-white flex items-center justify-center font-bold text-sm">
+                  B
+                </div>
+<div>
+<h4 class="font-bold text-xs text-obsidian leading-tight">Bob King (Blk)</h4>
+<div class="text-amber-400 text-xs">★★★★★</div>
+</div>
+</div>
+<p class="text-xs text-stone-700 italic leading-relaxed">
+                "This is the second time Fresh Paint has painted our house. Outstanding prep, super neat clean lines, and left the property spotless."
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between text-[10px] text-stone-400">
+<span>Google Verified</span>
+<span>10/18/2026</span>
+</div>
+</div>
+<!-- Card 2: Howard Farr -->
+<div class="min-w-[280px] max-w-[290px] bg-white rounded-3xl p-5 border border-stone-200 shadow-sm snap-center flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-sm">
+                  H
+                </div>
+<div>
+<h4 class="font-bold text-xs text-obsidian leading-tight">Howard Farr</h4>
+<div class="text-amber-400 text-xs">★★★★★</div>
+</div>
+</div>
+<p class="text-xs text-stone-700 italic leading-relaxed">
+                "Everything top notch as usual! Communication was seamless, price was completely fair, and Edwin’s crew is respectful and prompt."
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between text-[10px] text-stone-400">
+<span>Google Verified</span>
+<span>10/8/2026</span>
+</div>
+</div>
+<!-- Card 3: Louie Wolfe -->
+<div class="min-w-[280px] max-w-[290px] bg-white rounded-3xl p-5 border border-stone-200 shadow-sm snap-center flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-orange-600 text-white flex items-center justify-center font-bold text-sm">
+                  L
+                </div>
+<div>
+<h4 class="font-bold text-xs text-obsidian leading-tight">Louie Wolfe</h4>
+<div class="text-amber-400 text-xs">★★★★★</div>
+</div>
+</div>
+<p class="text-xs text-stone-700 italic leading-relaxed">
+                "They were always professional and hard working. Truly Disney level quality inside our residence. Will never use anyone else."
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between text-[10px] text-stone-400">
+<span>Google Verified</span>
+<span>8/19/2026</span>
+</div>
+</div>
+</div>
+<div class="text-center mt-3">
+<span class="text-[10px] text-stone-400 uppercase tracking-widest">Swipe for more verified testimonials ⇄</span>
+</div>
+</div>
+</section>
+<!-- END: Reviews Section -->
+<!-- BEGIN: Trusted Materials & Local Partnerships -->
+<section class="py-12 px-4 bg-white border-b border-stone-200 text-center">
+<div class="max-w-xl mx-auto">
+<h4 class="text-[11px] font-bold uppercase tracking-widest text-stone-400 mb-6">
+          Trusted Materials &amp; Local Partnerships
+        </h4>
+<div class="flex flex-wrap items-center justify-center gap-6 opacity-75">
+<!-- Sherwin Williams Text Monogram -->
+<div class="flex items-center space-x-1 font-display font-black text-xs text-stone-800 tracking-tighter">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-600 inline-block mr-1"></span>
+            SHERWIN-WILLIAMS
+          </div>
+<!-- Lanco Text Monogram -->
+<div class="font-display font-black text-xs text-rose-700 tracking-wider">
+            LANCO PAINTS
+          </div>
+<!-- South Lake Chamber Monogram -->
+<div class="font-serif text-xs text-emerald-800 font-semibold tracking-wide">
+            South Lake Chamber
+          </div>
+<!-- St. Jude Partnership Monogram -->
+<div class="text-[11px] font-sans font-semibold text-stone-800 flex items-center gap-1">
+<span class="text-rose-600">♥</span> St. Jude Partner
+          </div>
+</div>
+</div>
+</section>
+<!-- END: Trusted Materials & Local Partnerships -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-obsidian text-stone-400 py-12 px-6">
+<div class="max-w-xl mx-auto text-center space-y-6">
+<!-- Logo in Footer -->
+<div class="flex items-center justify-center gap-2">
+<svg class="w-6 h-6 text-accentRed" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 40 40">
+<path d="M4 19L20 5L36 19M8 17V33H32V17" stroke-linecap="round"></path>
+</svg>
+<span class="font-display font-black text-sm tracking-tight text-white">FRESH PAINT <span class="text-accentRed">FL</span></span>
+</div>
+<p class="text-xs leading-relaxed max-w-sm mx-auto text-stone-400">
+        Licensed &amp; Insured residential &amp; commercial finishing contractor serving Clermont, Windermere, Davenport, Winter Garden, and Central Florida.
+      </p>
+<!-- Anchor Links -->
+<nav class="flex flex-wrap justify-center gap-4 text-xs font-medium text-stone-300">
+<a class="hover:text-white transition" href="#home">Home</a>
+<a class="hover:text-white transition" href="#services">Services</a>
+<a class="hover:text-white transition" href="#why-us">About</a>
+<a class="hover:text-white transition" href="#projects">Gallery</a>
+<a class="hover:text-white transition" href="#contact">Contact</a>
+</nav>
+<!-- Social and Direct Contact -->
+<div class="flex justify-center gap-4 text-stone-300 text-xs">
+<a class="underline hover:text-white" href="tel:8633979974">(863) 397-9974</a>
+<span>•</span>
+<span>Mon–Sun 7am–7pm</span>
+</div>
+<div class="text-[11px] text-stone-500 pt-6 border-t border-stone-800">
+<p>Copyright © 2026 FRESH PAINT FL - All Rights Reserved.</p>
+<p class="mt-1">Architectural Standard Residential &amp; Commercial Painting</p>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Floating Sticky Mobile Navigation Bar -->
+<nav class="fixed bottom-4 left-4 right-4 z-40 max-w-md mx-auto" data-purpose="sticky-bottom-bar">
+<div class="glass-nav rounded-2xl px-3 py-2 flex items-center justify-between shadow-2xl text-white">
+<a class="nav-item flex flex-col items-center px-2 py-1 text-[10px] text-stone-300 hover:text-white transition" href="#home">
+<svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+<span>Home</span>
+</a>
+<a class="nav-item flex flex-col items-center px-2 py-1 text-[10px] text-stone-300 hover:text-white transition" href="#services">
+<svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+<span>Services</span>
+</a>
+<a class="nav-item flex flex-col items-center px-2 py-1 text-[10px] text-stone-300 hover:text-white transition" href="#reviews">
+<svg class="w-4 h-4 mb-0.5 text-amber-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<span>5.0 ★</span>
+</a>
+<a class="nav-item flex flex-col items-center px-2 py-1 text-[10px] text-stone-300 hover:text-white transition" href="tel:8633979974">
+<svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+<span>Call</span>
+</a>
+<a class="bg-accentRed hover:bg-rose-700 text-white px-3.5 py-2 rounded-xl text-xs font-bold tracking-tight shadow-md transition transform active:scale-95 flex items-center gap-1" href="#contact">
+<span>Quote</span>
+<span class="text-[10px]">→</span>
+</a>
+</div>
+</nav>
+<!-- END: Floating Sticky Mobile Navigation Bar -->
+<!-- BEGIN: Interactive Logic & Parallax Scripts -->
+<script data-purpose="mobile-drawer-and-navigation">
+    // Drawer open / close triggers
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const drawerContent = document.getElementById('drawer-content');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    function openDrawer() {
+      mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+      drawerContent.classList.remove('translate-y-full');
+    }
+
+    function closeDrawer() {
+      mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+      drawerContent.classList.add('translate-y-full');
+    }
+
+    if (menuBtn && closeBtn && mobileMenu) {
+      menuBtn.addEventListener('click', openDrawer);
+      closeBtn.addEventListener('click', closeDrawer);
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target === mobileMenu) closeDrawer();
+      });
+      drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
+    }
+
+    // Offset smooth scrolling for headers
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          const headerOffset = 70;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+<script data-purpose="parallax-and-scroll-interactions">
+    // Parallax effect on hero background
+    const heroBgImg = document.getElementById('hero-bg-img');
+    
+    window.addEventListener('scroll', () => {
+      const scrollY = window.pageYOffset;
+      if (heroBgImg && scrollY < window.innerHeight) {
+        heroBgImg.style.transform = `scale(1.1) translateY(${scrollY * 0.25}px)`;
+      }
+    }, { passive: true });
+
+    // Scroll reveal observer
+    const revealElements = document.querySelectorAll('.reveal-element');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-6');
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => {
+      el.classList.add('opacity-0', 'translate-y-6', 'transition-all', 'duration-700', 'ease-out');
+      observer.observe(el);
+    });
+
+    // Simple Form submission handler feedback
+    function handleFormSubmit() {
+      const btn = document.getElementById('submit-btn');
+      const msg = document.getElementById('form-msg');
+      if (btn && msg) {
+        btn.disabled = true;
+        btn.innerHTML = `<span>SUBMITTING...</span>`;
+        setTimeout(() => {
+          btn.classList.add('hidden');
+          msg.classList.remove('hidden');
+        }, 600);
+      }
+    }
+
+    // Modal Lightbox for Portfolio
+    function openLightbox(src, caption) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      if (lightbox && img && cap) {
+        img.src = src;
+        cap.textContent = caption || 'Fresh Paint FL Project Preview';
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+      }
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox) {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+      }
+    }
+  </script>
+<!-- END: Interactive Logic & Parallax Scripts -->
+</body></html>
